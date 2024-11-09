@@ -3,17 +3,16 @@
 
 
 //entrada
-let Odo_Ini = prompt("informe o odrometro no inicio do dia")
-let Odo_fim = prompt("infomre o odrometro no final do dia")
+let KmRodado = prompt("Informe os Km rodados")
 let ConsumoCombustivel = prompt("informe o consumo de combustivel")
 let LucPass = prompt("informe o lucro do passageiro")
 
 //processamento
-let Medi_comb = (Odo_Ini - Odo_fim) / ConsumoCombustivel
-let lucro_liqui = LucPass - (ConsumoCombustivel * 4.87)
+let Medi_comb = KmRodado / ConsumoCombustivel
+let LucroLiqui = LucPass - (ConsumoCombustivel * 4.87)
 
 //saida
 document.write("O consumo média foi de KM/L:" + Medi_comb)
-document.write("  O lucro liquido é R$" + lucro_liqui)
+document.write("  O lucro liquido é R$" + LucroLiqui)
 
 </script>
