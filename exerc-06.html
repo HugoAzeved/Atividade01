@@ -4,16 +4,14 @@
 //entrada
 let ExtenPista = prompt("Informe a extesnão da pista:")
 let NumVoltas = prompt("Informe o numero de voltas:")
-let NumReab = prompt("Informe o numero de reabastecimento")
 let Consumo = prompt("Informe o cosumo de combustivel")
 
 //processamento
-let TotalPercurso = ExtenPista / 100 * NumVoltas
-let distancia = TotalPercurso / (NumReab + 1)
-let NumLitros = distancia / Consumo
+let distancia = ExtenPista * NumVoltas
+let CombNecessario = distancia * Consumo
 
 //saida
-document.write("a quantidade de combustível necessária é" + NumLitros)
+document.write("a quantidade de combustível necessária é:" + CombNecessario)
 
 
 
